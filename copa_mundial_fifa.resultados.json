@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "66410fb413e11c52d5546c6b"
+  },
+  "equipo_local": "Argentina",
+  "equipo_visitante": "Islandia",
+  "resultado": "1-1",
+  "tarjetas": {
+    "amarillas": 2,
+    "rojas": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "66410fb413e11c52d5546c6c"
+  },
+  "equipo_local": "Portugal",
+  "equipo_visitante": "España",
+  "resultado": "3-3",
+  "tarjetas": {
+    "amarillas": 4,
+    "rojas": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "66410fb413e11c52d5546c6d"
+  },
+  "equipo_local": "Brasil",
+  "equipo_visitante": "Suiza",
+  "resultado": "1-1",
+  "tarjetas": {
+    "amarillas": 3,
+    "rojas": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "66410fb413e11c52d5546c6e"
+  },
+  "equipo_local": "Croacia",
+  "equipo_visitante": "Nigeria",
+  "resultado": "2-0",
+  "tarjetas": {
+    "amarillas": 1,
+    "rojas": 0
+  }
+},
+{
+  "_id": {
+    "$oid": "66410fb413e11c52d5546c6f"
+  },
+  "equipo_local": "Inglaterra",
+  "equipo_visitante": "Túnez",
+  "resultado": "2-1",
+  "tarjetas": {
+    "amarillas": 2,
+    "rojas": 0
+  }
+}]

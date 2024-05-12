@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "66410f0513e11c52d5546c61"
+  },
+  "nombre": "Nestor Pitana",
+  "nacionalidad": "Argentina",
+  "experiencia": "Árbitro de la FIFA"
+},
+{
+  "_id": {
+    "$oid": "66410f0513e11c52d5546c62"
+  },
+  "nombre": "Felix Brych",
+  "nacionalidad": "Alemania",
+  "experiencia": "Árbitro de la FIFA"
+},
+{
+  "_id": {
+    "$oid": "66410f0513e11c52d5546c63"
+  },
+  "nombre": "Björn Kuipers",
+  "nacionalidad": "Países Bajos",
+  "experiencia": "Árbitro de la FIFA"
+},
+{
+  "_id": {
+    "$oid": "66410f0a13e11c52d5546c69"
+  },
+  "nombre": "Sandro Ricci",
+  "nacionalidad": "Brasil",
+  "experiencia": "Árbitro de la FIFA"
+},
+{
+  "_id": {
+    "$oid": "66410f0a13e11c52d5546c6a"
+  },
+  "nombre": "Cüneyt Çakır",
+  "nacionalidad": "Turquía",
+  "experiencia": "Árbitro de la FIFA"
+}]

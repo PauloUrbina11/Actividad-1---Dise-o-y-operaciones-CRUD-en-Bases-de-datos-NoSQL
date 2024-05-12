@@ -1,0 +1,98 @@
+[{
+  "_id": {
+    "$oid": "6641106b13e11c52d5546c75"
+  },
+  "equipo": "Argentina",
+  "grupo": "Grupo D",
+  "puntos": 4,
+  "partidos_jugados": 3,
+  "partidos_ganados": 1,
+  "partidos_empatados": 1,
+  "partidos_perdidos": 1,
+  "goles_a_favor": 3,
+  "goles_en_contra": 5
+},
+{
+  "_id": {
+    "$oid": "6641106b13e11c52d5546c76"
+  },
+  "equipo": "Portugal",
+  "grupo": "Grupo B",
+  "puntos": 5,
+  "partidos_jugados": 3,
+  "partidos_ganados": 1,
+  "partidos_empatados": 2,
+  "partidos_perdidos": 0,
+  "goles_a_favor": 6,
+  "goles_en_contra": 4
+},
+{
+  "_id": {
+    "$oid": "6641106b13e11c52d5546c77"
+  },
+  "equipo": "Brasil",
+  "grupo": "Grupo E",
+  "puntos": 7,
+  "partidos_jugados": 3,
+  "partidos_ganados": 2,
+  "partidos_empatados": 1,
+  "partidos_perdidos": 0,
+  "goles_a_favor": 5,
+  "goles_en_contra": 1
+},
+{
+  "_id": {
+    "$oid": "6641106b13e11c52d5546c78"
+  },
+  "equipo": "Croacia",
+  "grupo": "Grupo D",
+  "puntos": 9,
+  "partidos_jugados": 3,
+  "partidos_ganados": 3,
+  "partidos_empatados": 0,
+  "partidos_perdidos": 0,
+  "goles_a_favor": 7,
+  "goles_en_contra": 1
+},
+{
+  "_id": {
+    "$oid": "6641106b13e11c52d5546c79"
+  },
+  "equipo": "Inglaterra",
+  "grupo": "Grupo G",
+  "puntos": 6,
+  "partidos_jugados": 3,
+  "partidos_ganados": 2,
+  "partidos_empatados": 0,
+  "partidos_perdidos": 1,
+  "goles_a_favor": 8,
+  "goles_en_contra": 3
+},
+{
+  "_id": {
+    "$oid": "664110ff13e11c52d5546c7b"
+  },
+  "equipo": "Nigeria",
+  "grupo": "Grupo D",
+  "puntos": 3,
+  "partidos_jugados": 3,
+  "partidos_ganados": 1,
+  "partidos_empatados": 0,
+  "partidos_perdidos": 2,
+  "goles_a_favor": 3,
+  "goles_en_contra": 4
+},
+{
+  "_id": {
+    "$oid": "664110ff13e11c52d5546c7c"
+  },
+  "equipo": "Islandia",
+  "grupo": "Grupo D",
+  "puntos": 1,
+  "partidos_jugados": 3,
+  "partidos_ganados": 0,
+  "partidos_empatados": 1,
+  "partidos_perdidos": 2,
+  "goles_a_favor": 2,
+  "goles_en_contra": 5
+}]

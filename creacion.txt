@@ -1,0 +1,108 @@
+--creamos la base de datos
+use copa_mundial_fifa 
+
+--creamos la colección deportistas
+db.deportistas.insertMany([
+    { nombre: "Lionel Messi", nacionalidad: "Argentina", posicion: "Delantero", edad: 31 },
+    { nombre: "Cristiano Ronaldo", nacionalidad: "Portugal", posicion: "Delantero", edad: 33 },
+    { nombre: "Neymar Jr", nacionalidad: "Brasil", posicion: "Delantero", edad: 26 },
+    { nombre: "Luka Modric", nacionalidad: "Croacia", posicion: "Centrocampista", edad: 32 },
+    { nombre: "Harry Kane", nacionalidad: "Inglaterra", posicion: "Delantero", edad: 25 },
+])
+
+--creamos la colección equipos
+db.equipos.insertMany([
+    { nombre: "Argentina", entrenador: "Jorge Sampaoli", jugadores: ["Lionel Messi", "Sergio Agüero", "Angel Di Maria"], },
+    { nombre: "Portugal", entrenador: "Fernando Santos", jugadores: ["Cristiano Ronaldo", "Bernardo Silva", "Gonçalo Guedes"], },
+    { nombre: "Brasil", entrenador: "Tite", jugadores: ["Neymar Jr", "Philippe Coutinho", "Gabriel Jesus"], },
+    { nombre: "Croacia", entrenador: "Zlatko Dalić", jugadores: ["Luka Modric", "Ivan Rakitic", "Mario Mandzukic"], },
+    { nombre: "Inglaterra", entrenador: "Gareth Southgate", jugadores: ["Harry Kane", "Raheem Sterling", "Dele Alli"], },
+])
+
+--creamos la colección entrenadores
+db.entrenadores.insertMany([
+    { nombre: "Jorge Sampaoli", nacionalidad: "Argentina", experiencia: "Exjugador de fútbol", },
+    { nombre: "Fernando Santos", nacionalidad: "Portugal", experiencia: "Exjugador de fútbol", },
+    { nombre: "Tite", nacionalidad: "Brasil", experiencia: "Exjugador de fútbol", },
+    { nombre: "Zlatko Dalić", nacionalidad: "Croacia", experiencia: "Exjugador de fútbol", },
+    { nombre: "Gareth Southgate", nacionalidad: "Inglaterra", experiencia: "Exjugador de fútbol", },
+])
+
+--creamos la colección arbitros
+db.arbitros.insertMany([
+    { nombre: "Nestor Pitana", nacionalidad: "Argentina", experiencia: "Árbitro de la FIFA", },
+    { nombre: "Felix Brych", nacionalidad: "Alemania", experiencia: "Árbitro de la FIFA", },
+    { nombre: "Björn Kuipers", nacionalidad: "Países Bajos", experiencia: "Árbitro de la FIFA", },
+    { nombre: "Sandro Ricci", nacionalidad: "Brasil", experiencia: "Árbitro de la FIFA", },
+    { nombre: "Cüneyt Çakır", nacionalidad: "Turquía", experiencia: "Árbitro de la FIFA", },
+])
+
+--creamos la colección resultados
+db.resultados.insertMany([
+    { equipo_local: "Argentina", equipo_visitante: "Islandia", resultado: "1-1", tarjetas: { amarillas: 2, rojas: 0 } },
+    { equipo_local: "Portugal", equipo_visitante: "España", resultado: "3-3", tarjetas: { amarillas: 4, rojas: 0 } },
+    { equipo_local: "Brasil", equipo_visitante: "Suiza", resultado: "1-1", tarjetas: { amarillas: 3, rojas: 0 } },
+    { equipo_local: "Croacia", equipo_visitante: "Nigeria", resultado: "2-0", tarjetas: { amarillas: 1, rojas: 0 } },
+    { equipo_local: "Inglaterra", equipo_visitante: "Túnez", resultado: "2-1", tarjetas: { amarillas: 2, rojas: 0 } }
+])
+
+--creamos la colección tabla_posiciones
+db.tabla_posiciones.insertMany([
+    { equipo: "Argentina", grupo: "Grupo D", puntos: 4, partidos_jugados: 3, partidos_ganados: 1, partidos_empatados: 1, partidos_perdidos: 1, goles_a_favor: 3, goles_en_contra: 5 },
+    { equipo: "Portugal", grupo: "Grupo B", puntos: 5, partidos_jugados: 3, partidos_ganados: 1, partidos_empatados: 2, partidos_perdidos: 0, goles_a_favor: 6, goles_en_contra: 4 },
+    { equipo: "Brasil", grupo: "Grupo E", puntos: 7, partidos_jugados: 3, partidos_ganados: 2, partidos_empatados: 1, partidos_perdidos: 0, goles_a_favor: 5, goles_en_contra: 1 },
+    { equipo: "Croacia", grupo: "Grupo D", puntos: 9, partidos_jugados: 3, partidos_ganados: 3, partidos_empatados: 0, partidos_perdidos: 0, goles_a_favor: 7, goles_en_contra: 1 },
+    { equipo: "Inglaterra", grupo: "Grupo G", puntos: 6, partidos_jugados: 3, partidos_ganados: 2, partidos_empatados: 0, partidos_perdidos: 1, goles_a_favor: 8, goles_en_contra: 3 },
+    { equipo: "Croacia", grupo: "Grupo D", puntos: 9, partidos_jugados: 3, partidos_ganados: 3, partidos_empatados: 0, partidos_perdidos: 0, goles_a_favor: 7, goles_en_contra: 1 },
+    { equipo: "Nigeria", grupo: "Grupo D", puntos: 3, partidos_jugados: 3, partidos_ganados: 1, partidos_empatados: 0, partidos_perdidos: 2, goles_a_favor: 3, goles_en_contra: 4 },
+    { equipo: "Islandia", grupo: "Grupo D", puntos: 1, partidos_jugados: 3, partidos_ganados: 0, partidos_empatados: 1, partidos_perdidos: 2, goles_a_favor: 2, goles_en_contra: 5 },
+])
+
+--creamos la colección encuentros_deportivos
+db.encuentros_deportivos.insertMany([
+    {
+        fecha: new Date("2018-06-16"),
+        hora: "20:00",
+        equipo_local: "Argentina",
+        equipo_visitante: "Islandia",
+        goles_local: 1,
+        goles_visitante: 1,
+        arbitro: "Felix Brych"
+    },
+    {
+        fecha: new Date("2018-06-15"),
+        hora: "21:00",
+        equipo_local: "Portugal",
+        equipo_visitante: "España",
+        goles_local: 3,
+        goles_visitante: 3,
+        arbitro: "Nestor Pitana"
+    },
+    {
+        fecha: new Date("2018-06-17"),
+        hora: "18:00",
+        equipo_local: "Brasil",
+        equipo_visitante: "Suiza",
+        goles_local: 1,
+        goles_visitante: 1,
+        arbitro: "Sandro Ricci"
+    },
+    {
+        fecha: new Date("2018-06-16"),
+        hora: "15:00",
+        equipo_local: "Croacia",
+        equipo_visitante: "Nigeria",
+        goles_local: 2,
+        goles_visitante: 0,
+        arbitro: "Björn Kuipers"
+    },
+    {
+        fecha: new Date("2018-06-18"),
+        hora: "21:00",
+        equipo_local: "Inglaterra",
+        equipo_visitante: "Túnez",
+        goles_local: 2,
+        goles_visitante: 1,
+        arbitro: "Cüneyt Çakır"
+    }
+])

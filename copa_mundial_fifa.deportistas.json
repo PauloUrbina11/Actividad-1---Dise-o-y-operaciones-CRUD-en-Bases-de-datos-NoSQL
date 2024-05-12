@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "66410ee513e11c52d5546c52"
+  },
+  "nombre": "Lionel Messi",
+  "nacionalidad": "Argentina",
+  "posicion": "Delantero",
+  "edad": 31
+},
+{
+  "_id": {
+    "$oid": "66410ee513e11c52d5546c53"
+  },
+  "nombre": "Cristiano Ronaldo",
+  "nacionalidad": "Portugal",
+  "posicion": "Delantero",
+  "edad": 33
+},
+{
+  "_id": {
+    "$oid": "66410ee513e11c52d5546c54"
+  },
+  "nombre": "Neymar Jr",
+  "nacionalidad": "Brasil",
+  "posicion": "Delantero",
+  "edad": 26
+},
+{
+  "_id": {
+    "$oid": "66410ee513e11c52d5546c55"
+  },
+  "nombre": "Luka Modric",
+  "nacionalidad": "Croacia",
+  "posicion": "Centrocampista",
+  "edad": 32
+},
+{
+  "_id": {
+    "$oid": "66410ee513e11c52d5546c56"
+  },
+  "nombre": "Harry Kane",
+  "nacionalidad": "Inglaterra",
+  "posicion": "Delantero",
+  "edad": 25
+}]

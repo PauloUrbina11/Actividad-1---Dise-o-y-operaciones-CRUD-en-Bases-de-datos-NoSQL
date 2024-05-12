@@ -1,0 +1,70 @@
+[{
+  "_id": {
+    "$oid": "664113d113e11c52d5546c7d"
+  },
+  "fecha": {
+    "$date": "2018-06-16T00:00:00.000Z"
+  },
+  "hora": "20:00",
+  "equipo_local": "Argentina",
+  "equipo_visitante": "Islandia",
+  "goles_local": 1,
+  "goles_visitante": 1,
+  "arbitro": "Felix Brych"
+},
+{
+  "_id": {
+    "$oid": "664113d113e11c52d5546c7e"
+  },
+  "fecha": {
+    "$date": "2018-06-15T00:00:00.000Z"
+  },
+  "hora": "21:00",
+  "equipo_local": "Portugal",
+  "equipo_visitante": "España",
+  "goles_local": 3,
+  "goles_visitante": 3,
+  "arbitro": "Nestor Pitana"
+},
+{
+  "_id": {
+    "$oid": "664113d113e11c52d5546c7f"
+  },
+  "fecha": {
+    "$date": "2018-06-17T00:00:00.000Z"
+  },
+  "hora": "18:00",
+  "equipo_local": "Brasil",
+  "equipo_visitante": "Suiza",
+  "goles_local": 1,
+  "goles_visitante": 1,
+  "arbitro": "Sandro Ricci"
+},
+{
+  "_id": {
+    "$oid": "664113d113e11c52d5546c80"
+  },
+  "fecha": {
+    "$date": "2018-06-16T00:00:00.000Z"
+  },
+  "hora": "15:00",
+  "equipo_local": "Croacia",
+  "equipo_visitante": "Nigeria",
+  "goles_local": 2,
+  "goles_visitante": 0,
+  "arbitro": "Björn Kuipers"
+},
+{
+  "_id": {
+    "$oid": "664113d113e11c52d5546c81"
+  },
+  "fecha": {
+    "$date": "2018-06-18T00:00:00.000Z"
+  },
+  "hora": "21:00",
+  "equipo_local": "Inglaterra",
+  "equipo_visitante": "Túnez",
+  "goles_local": 2,
+  "goles_visitante": 1,
+  "arbitro": "Cüneyt Çakır"
+}]

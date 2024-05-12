@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "66410ef913e11c52d5546c57"
+  },
+  "nombre": "Argentina",
+  "entrenador": "Jorge Sampaoli",
+  "jugadores": [
+    "Lionel Messi",
+    "Sergio Agüero",
+    "Angel Di Maria"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66410ef913e11c52d5546c58"
+  },
+  "nombre": "Portugal",
+  "entrenador": "Fernando Santos",
+  "jugadores": [
+    "Cristiano Ronaldo",
+    "Bernardo Silva",
+    "Gonçalo Guedes"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66410ef913e11c52d5546c59"
+  },
+  "nombre": "Brasil",
+  "entrenador": "Tite",
+  "jugadores": [
+    "Neymar Jr",
+    "Philippe Coutinho",
+    "Gabriel Jesus"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66410ef913e11c52d5546c5a"
+  },
+  "nombre": "Croacia",
+  "entrenador": "Zlatko Dalić",
+  "jugadores": [
+    "Luka Modric",
+    "Ivan Rakitic",
+    "Mario Mandzukic"
+  ]
+},
+{
+  "_id": {
+    "$oid": "66410ef913e11c52d5546c5b"
+  },
+  "nombre": "Inglaterra",
+  "entrenador": "Gareth Southgate",
+  "jugadores": [
+    "Harry Kane",
+    "Raheem Sterling",
+    "Dele Alli"
+  ]
+}]

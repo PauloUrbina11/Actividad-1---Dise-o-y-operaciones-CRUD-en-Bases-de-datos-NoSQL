@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "66410f0013e11c52d5546c5c"
+  },
+  "nombre": "Jorge Sampaoli",
+  "nacionalidad": "Argentina",
+  "experiencia": "Exjugador de fútbol"
+},
+{
+  "_id": {
+    "$oid": "66410f0013e11c52d5546c5d"
+  },
+  "nombre": "Fernando Santos",
+  "nacionalidad": "Portugal",
+  "experiencia": "Exjugador de fútbol"
+},
+{
+  "_id": {
+    "$oid": "66410f0013e11c52d5546c5e"
+  },
+  "nombre": "Tite",
+  "nacionalidad": "Brasil",
+  "experiencia": "Exjugador de fútbol"
+},
+{
+  "_id": {
+    "$oid": "66410f0013e11c52d5546c5f"
+  },
+  "nombre": "Zlatko Dalić",
+  "nacionalidad": "Croacia",
+  "experiencia": "Exjugador de fútbol"
+},
+{
+  "_id": {
+    "$oid": "66410f0013e11c52d5546c60"
+  },
+  "nombre": "Gareth Southgate",
+  "nacionalidad": "Inglaterra",
+  "experiencia": "Exjugador de fútbol"
+}]

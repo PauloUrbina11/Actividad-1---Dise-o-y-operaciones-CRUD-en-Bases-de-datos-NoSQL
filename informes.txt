@@ -1,0 +1,173 @@
+-- Lista de deportistas por equipo
+db.equipos.find({ nombre: "Argentina" }, { jugadores: 1, _id: 0 })
+
+{
+  jugadores: [
+    'Lionel Messi',
+    'Sergio Agüero',
+    'Angel Di Maria'
+  ]
+}
+
+-- Lista de encuentros
+db.encuentros_deportivos.find({})
+
+
+{
+  _id: ObjectId('664113d113e11c52d5546c7d'),
+  fecha: 2018-06-16T00:00:00.000Z,
+  hora: '20:00',
+  equipo_local: 'Argentina',
+  equipo_visitante: 'Islandia',
+  goles_local: 1,
+  goles_visitante: 1,
+  arbitro: 'Felix Brych'
+}
+{
+  _id: ObjectId('664113d113e11c52d5546c7e'),
+  fecha: 2018-06-15T00:00:00.000Z,
+  hora: '21:00',
+  equipo_local: 'Portugal',
+  equipo_visitante: 'España',
+  goles_local: 3,
+  goles_visitante: 3,
+  arbitro: 'Nestor Pitana'
+}
+{
+  _id: ObjectId('664113d113e11c52d5546c7f'),
+  fecha: 2018-06-17T00:00:00.000Z,
+  hora: '18:00',
+  equipo_local: 'Brasil',
+  equipo_visitante: 'Suiza',
+  goles_local: 1,
+  goles_visitante: 1,
+  arbitro: 'Sandro Ricci'
+}
+{
+  _id: ObjectId('664113d113e11c52d5546c80'),
+  fecha: 2018-06-16T00:00:00.000Z,
+  hora: '15:00',
+  equipo_local: 'Croacia',
+  equipo_visitante: 'Nigeria',
+  goles_local: 2,
+  goles_visitante: 0,
+  arbitro: 'Björn Kuipers'
+}
+{
+  _id: ObjectId('664113d113e11c52d5546c81'),
+  fecha: 2018-06-18T00:00:00.000Z,
+  hora: '21:00',
+  equipo_local: 'Inglaterra',
+  equipo_visitante: 'Túnez',
+  goles_local: 2,
+  goles_visitante: 1,
+  arbitro: 'Cüneyt Çakır'
+}
+
+-- Lista de arbitros por nacionalidad
+db.arbitros.find({ nacionalidad: "Argentina" })
+
+{
+  _id: ObjectId('66410f0513e11c52d5546c61'),
+  nombre: 'Nestor Pitana',
+  nacionalidad: 'Argentina',
+  experiencia: 'Árbitro de la FIFA'
+}
+
+--Estadistica de goles por equipo
+db.tabla_posiciones.find({}, { equipo: 1, goles_a_favor: 1, goles_en_contra: 1 })
+
+{
+  _id: ObjectId('6641106b13e11c52d5546c75'),
+  equipo: 'Argentina',
+  goles_a_favor: 3,
+  goles_en_contra: 5
+}
+{
+  _id: ObjectId('6641106b13e11c52d5546c76'),
+  equipo: 'Portugal',
+  goles_a_favor: 6,
+  goles_en_contra: 4
+}
+{
+  _id: ObjectId('6641106b13e11c52d5546c77'),
+  equipo: 'Brasil',
+  goles_a_favor: 5,
+  goles_en_contra: 1
+}
+{
+  _id: ObjectId('6641106b13e11c52d5546c78'),
+  equipo: 'Croacia',
+  goles_a_favor: 7,
+  goles_en_contra: 1
+}
+{
+  _id: ObjectId('6641106b13e11c52d5546c79'),
+  equipo: 'Inglaterra',
+  goles_a_favor: 8,
+  goles_en_contra: 3
+}
+{
+  _id: ObjectId('664110ff13e11c52d5546c7b'),
+  equipo: 'Nigeria',
+  goles_a_favor: 3,
+  goles_en_contra: 4
+}
+{
+  _id: ObjectId('664110ff13e11c52d5546c7c'),
+  equipo: 'Islandia',
+  goles_a_favor: 2,
+  goles_en_contra: 5
+}
+
+-- Tabla de posiciones de cada grupo al finalizar la fase de grupos
+db.tabla_posiciones.find({ grupo: "Grupo D" }).sort({ puntos: -1 })
+
+{
+  _id: ObjectId('6641106b13e11c52d5546c78'),
+  equipo: 'Croacia',
+  grupo: 'Grupo D',
+  puntos: 9,
+  partidos_jugados: 3,
+  partidos_ganados: 3,
+  partidos_empatados: 0,
+  partidos_perdidos: 0,
+  goles_a_favor: 7,
+  goles_en_contra: 1
+}
+{
+  _id: ObjectId('6641106b13e11c52d5546c75'),
+  equipo: 'Argentina',
+  grupo: 'Grupo D',
+  puntos: 4,
+  partidos_jugados: 3,
+  partidos_ganados: 1,
+  partidos_empatados: 1,
+  partidos_perdidos: 1,
+  goles_a_favor: 3,
+  goles_en_contra: 5
+}
+{
+  _id: ObjectId('664110ff13e11c52d5546c7b'),
+  equipo: 'Nigeria',
+  grupo: 'Grupo D',
+  puntos: 3,
+  partidos_jugados: 3,
+  partidos_ganados: 1,
+  partidos_empatados: 0,
+  partidos_perdidos: 2,
+  goles_a_favor: 3,
+  goles_en_contra: 4
+}
+{
+  _id: ObjectId('664110ff13e11c52d5546c7c'),
+  equipo: 'Islandia',
+  grupo: 'Grupo D',
+  puntos: 1,
+  partidos_jugados: 3,
+  partidos_ganados: 0,
+  partidos_empatados: 1,
+  partidos_perdidos: 2,
+  goles_a_favor: 2,
+  goles_en_contra: 5
+}
